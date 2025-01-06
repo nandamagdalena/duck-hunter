@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>title</title>
+</head>
+<body>
+    <div class="gamemenu" id="gamemenu">
+        <button id="leaderboardBtn" class="leaderboardBtn">Leaderboard</button>
+        <div class="gamename">
+             <marquee behavior="alternate" direction=""><img src="duck.png" alt=""></marquee>
+            <h1>DUCK HUNT</h1>
+        </div>
+        <div class="card">
+           
+        <input type="text" name="" id="username" placeholder="input username here">
+        <select name="level" id="level">
+            <option value="easy">easy</option>
+            <option value="medium">medium</option>
+            <option value="hard">hard</option>
+        </select>
+        <button id="startBtn">start</button>
+        </div>
+    </div>
+    <div id="leaderboard">
+        <div id="leaderboardDiv">
+            <table id="scoreTable">
+                <tr>
+                    <th>Rank</th>
+                    <th>Name</th>
+                    <th>Score</th>
+                </tr>
+            </table>
+            
+        </div>
+   </div>
+    <div class="gamecontainer" id="gamecontainer">
+        <div class="gameinfo">
+            <p id="usernameText">username</p>
+            <p id="scoreText">score:</p>
+        </div>
+        <canvas id="canvas"></canvas>
+        
+    </div>
+    <div class="gameoverwindow" id="gameoverwindow">
+        <h1>Game Over</h1>
+        <button id="Btnbacktomenu">back to menu</button>
+        <button class="leaderboardBtn" id="lbgo">leaderboard</button>
+        <button id="retryBtn">retry</button>
+    </div>
+    <div class="pausewindow" id="pausewindow">
+        <h1>Game Paused</h1>
+        <button id="continueBtn">Continue</button>
+        <button id="restartBtn">Restart</button>
+        <button id="backToMenuBtn">Back to Menu</button>
+    </div>
+
+    <script src="menu.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
